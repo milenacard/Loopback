@@ -13,7 +13,7 @@
       "./mixins"
     ]
   },
-  "Event": {
+  "event": {
     "dataSource": "mydatasource",
     "public": true
   }

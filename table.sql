@@ -25,6 +25,7 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `event`
 --
+USE lab3;
 
 CREATE TABLE IF NOT EXISTS `event` (
   `id` int(12) NOT NULL AUTO_INCREMENT,

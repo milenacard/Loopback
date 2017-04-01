@@ -1,6 +1,6 @@
 {
-  "name": "Event",
-  "plural": "Events",
+  "name": "event",
+  "plural": "events",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
