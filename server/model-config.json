@@ -16,5 +16,9 @@
   "event": {
     "dataSource": "mydatasource",
     "public": true
+  },
+  "user": {
+    "dataSource": "mydatasource",
+    "public": true
   }
 }
