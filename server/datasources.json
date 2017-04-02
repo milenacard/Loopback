@@ -4,7 +4,7 @@
     "port": 3306,
     "url": "",
     "database": "lab3",
-    "password": "root",
+    "password": "",
     "name": "mydatasource",
     "user": "root",
     "connector": "mysql"
