@@ -8,5 +8,11 @@
     "name": "mydatasource",
     "user": "root",
     "connector": "mysql"
+  },
+  "dataimages": {
+    "name": "dataimages",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/myimages"
   }
 }

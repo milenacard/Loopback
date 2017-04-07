@@ -20,5 +20,9 @@
   "user": {
     "dataSource": "mydatasource",
     "public": true
+  },
+  "Container": {
+    "dataSource": "dataimages",
+    "public": true
   }
 }

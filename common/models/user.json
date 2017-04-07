@@ -20,7 +20,7 @@
       "required": true
     },
     "edad": {
-      "type": "number",
+      "type": "string",
       "required": true
     },
     "email": {
