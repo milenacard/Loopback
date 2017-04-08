@@ -1,15 +1,9 @@
--- phpMyAdmin SQL Dump
--- version 3.5.1
--- http://www.phpmyadmin.net
---
--- Servidor: localhost
--- Tiempo de generación: 04-04-2017 a las 15:36:23
--- Versión del servidor: 5.5.24-log
--- Versión de PHP: 5.4.3
-
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
+--
+-- Base de datos: `lab3`
+--
 CREATE DATABASE lab3;
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -20,7 +14,6 @@ CREATE DATABASE lab3;
 -- Base de datos: `lab3`
 --
 USE lab3;
-
 -- --------------------------------------------------------
 
 --
@@ -51,6 +44,34 @@ INSERT INTO `event` (`id`, `foto`, `nombre`, `descripcion`, `puntuacion`, `respo
 (3, 'R.drawable.australia_20122', 'Formula 1', 'Gran Premio de Australia', '3', 'Alemania', '26/03/2017', -27, 133, 'El Gran Premio de Australia de 2017 será la primera carrera de la temporada 2017 de Fórmula 1, que se disputara en el Circuito de Albert Park, en Melbourne (Australia).'),
 (4, 'R.drawable.hockey', 'Patinaje sobre hielo', 'Campeonato Mundial femenino 2017', '5', 'EEUU', '31/03/2017', 38, -97, 'Es la maxima competición internacional entre selecciones nacionales de hockey sobre hielo.'),
 (5, 'R.drawable.balonmano', 'Balonmano', 'XXV Campeonato Mundial de Balonmano Femenino', '2', 'Alemania', '01/12/2017', 51, 9, 'Un total de veinticuatro selecciones nacionales de cuatro confederaciones continentales competiran por el titulo de campeón mundial, cuyo actual portador es el equipo de Noruega, vencedor del Mundial de 2015.');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(10) NOT NULL,
+  `password` varchar(10) NOT NULL,
+  `nombre` varchar(40) NOT NULL,
+  `edad` varchar(3) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `foto` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`, `nombre`, `edad`, `email`, `foto`) VALUES
+(1, 'Luisita', '1234567', 'Luisa Carvajal', '25', 'luisita123@gmail.com', NULL);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
